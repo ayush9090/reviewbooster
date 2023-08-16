@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "module": "NodeNext",
+    "moduleResolution": "node",
+    "baseUrl": "src",
+    "target": "ES2021",
+    "outDir": "dist",
+    "rootDir": "./src",
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "strict": true
+  },
+  "include": ["src/**/*"]
+}
