@@ -6,9 +6,6 @@ const cors = require("cors");
 router.use(cors());
 router.use(express.json());
 
-// router.get(
-//   "/getAppointments",
-//   appointmentController.getAppointments.bind(appointmentController)
-// );
+router.get("/getMotels", motelController.getMotels.bind(motelController));
 
 module.exports = router;
