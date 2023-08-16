@@ -7,5 +7,9 @@ router.use(cors());
 router.use(express.json());
 
 router.get("/getMotels", motelController.getMotels.bind(motelController));
+router.get(
+  "/getMotelsByEmail",
+  motelController.getMotelsByEmail.bind(motelController)
+);
 
 module.exports = router;
