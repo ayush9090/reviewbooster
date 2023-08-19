@@ -8,11 +8,7 @@ const routes = require("./indexRouters");
 
 const app = express();
 
-app.use(
-  cors({
-    credentials: true,
-  })
-);
+app.use(cors({ origin: "http://localhost:3000" }));
 
 app.use(compression());
 app.use(cookieParser());
