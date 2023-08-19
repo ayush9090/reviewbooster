@@ -14,3 +14,9 @@ export interface SendEmailRequest extends Request {
   text: string;
   html?: string;
 }
+
+export interface SendSmsRequest extends Request {
+  to: string[];
+  from: string;
+  text: string;
+}
